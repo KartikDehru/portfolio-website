@@ -1,0 +1,37 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A modern, design-heavy portfolio website built with HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Portfolio website is ready!'",
+    "deploy": "echo 'Ready for deployment to your hosting service'"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "design",
+    "responsive",
+    "modern",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Kartik Dehru",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KartikDehru/portfolio-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KartikDehru/portfolio-website/issues"
+  },
+  "homepage": "https://kartikdehru.github.io/portfolio-website",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
