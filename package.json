@@ -31,7 +31,5 @@
   "homepage": "https://kartikdehru.github.io/portfolio-website",
   "devDependencies": {},
   "dependencies": {},
-  "engines": {
-    "node": ">=14.0.0"
-  }
+
 }
