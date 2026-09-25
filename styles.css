@@ -733,15 +733,19 @@ img {
 .exp-heading h2 {
   font-size: 1.125rem;
   font-weight: 600;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-color: var(--ternary);
   width: 100%;
   display: flex;
   align-items: center;
   gap: 1rem;
   font-family: "Urbanist", sans-serif;
+  color: var(--ternary);
+}
+
+.exp-company {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-color: var(--ternary);
 }
 
 @media (min-width: 768px) {
@@ -754,11 +758,13 @@ img {
   display: none;
   font-size: 10px;
   line-height: 12px;
-  color: #252525;
+  color: #252525 !important;
   background: #d4d4d4;
   border-radius: 0.125rem;
   padding: 0.125rem 0.25rem;
   white-space: nowrap;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
 }
 
 .exp-badge.mobile {

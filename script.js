@@ -43,12 +43,16 @@
           }
         });
       },
-      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.12, rootMargin: "0px 0px -20px 0px" }
     );
     cards.forEach((card, idx) => {
       card.style.transitionDelay = `${idx * 120}ms`;
       io.observe(card);
     });
+    // Fallback so cards never stay invisible
+    setTimeout(() => {
+      cards.forEach((card) => card.classList.add("visible"));
+    }, 1800);
   } else {
     cards.forEach((card) => card.classList.add("visible"));
   }
