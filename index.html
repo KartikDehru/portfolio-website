@@ -1,372 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kartik Dehru | Web3 Developer</title>
-    <meta name="description" content="Professional Web3 developer portfolio showcasing blockchain development, smart contracts, and decentralized applications">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kartik Dehru | Portfolio</title>
+  <meta name="description" content="Full Stack Web Developer and Web3 Engineer building scalable REST APIs, decentralized applications, and production-grade platforms." />
+  <meta name="keywords" content="Kartik Dehru, Web3, Full Stack, Solidity, React, Node.js" />
+  <meta property="og:title" content="Kartik Dehru | Portfolio" />
+  <meta property="og:description" content="Full Stack Web Developer and Web3 Engineer building scalable REST APIs, decentralized applications, and production-grade platforms." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">Kartik Dehru</span>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
+  <div class="grid-bg" aria-hidden="true">
+    <svg class="grid-svg">
+      <defs>
+        <pattern id="grid" width="45" height="45" patternUnits="userSpaceOnUse" x="-1" y="-1">
+          <path d="M.5 45V.5H45" fill="none" stroke-dasharray="0"></path>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#grid)"></rect>
+      <svg x="-1" y="-1" class="grid-squares overflow-visible"></svg>
+    </svg>
+  </div>
+
+  <div class="page">
+    <nav class="navbar" id="navbar">
+      <a class="nav-brand" href="/">Kartik Dehru</a>
+      <div class="nav-links">
+        <a href="/projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="title-line">Kartik</span>
-                        <span class="title-line">Dehru</span>
-                    </h1>
-                    <p class="hero-subtitle">Web3 Developer & Blockchain Enthusiast</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="floating-elements">
-                        <div class="floating-shape shape-1"></div>
-                        <div class="floating-shape shape-2"></div>
-                        <div class="floating-shape shape-3"></div>
-                    </div>
-                </div>
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-canvas-wrap">
+            <div class="rotate-hint" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16.466 7.5C15.643 4.237 13.952 2 12 2 9.239 2 7 6.477 7 12s2.239 10 5 10c.342 0 .677-.069 1-.2"></path>
+                <path d="m15.194 13.707 3.814 1.86-1.86 3.814"></path>
+                <path d="M19 15.57c-1.804.885-4.274 1.43-7 1.43-5.523 0-10-2.239-10-5s4.477-5 10-5c4.838 0 8.873 1.718 9.8 4"></path>
+              </svg>
             </div>
-            <div class="scroll-indicator">
-                <div class="scroll-arrow"></div>
-                <span>Scroll to explore</span>
-            </div>
+            <canvas id="hero-canvas"></canvas>
+          </div>
+          <div class="hero-copy">
+            <div class="hero-glow"></div>
+            <p class="typed-line"><span id="typed-text"></span><span class="typed-cursor">|</span></p>
+          </div>
         </div>
-    </section>
+        <a class="more-about" href="#skills">
+          <img src="icons/arrow-down.svg" alt="arrow down" />
+          <p>More about me</p>
+          <img src="icons/arrow-down.svg" alt="arrow down" />
+        </a>
+      </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-description">
-                        I'm a passionate Web3 developer with expertise in blockchain technology, smart contracts, and decentralized applications. 
-                        I specialize in Solidity, Ethereum development, and building innovative solutions on the blockchain.
-                    </p>
-                    <p class="about-description">
-                        My focus is on creating secure, scalable, and user-friendly dApps that leverage the power of blockchain technology 
-                        to solve real-world problems and drive innovation in the decentralized ecosystem.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">2+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Web3 Projects</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Blockchain Networks</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-container">
-                        <img src="profile-photo.png" alt="Kartik Dehru - Web3 Developer" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="image-decoration"></div>
-                    </div>
-                </div>
-            </div>
+      <section id="skills" class="skills">
+        <div class="skills-inner">
+          <div class="skills-grid">
+            <div class="skill"><img src="skills/js.svg" alt="JavaScript" /></div>
+            <div class="skill"><img src="skills/react.svg" alt="React" /></div>
+            <div class="skill"><img src="skills/html.svg" alt="HTML" /></div>
+            <div class="skill"><img src="skills/css.svg" alt="CSS" /></div>
+            <div class="skill"><img src="skills/node.svg" alt="Node.js" /></div>
+            <div class="skill"><img src="skills/mongodb.svg" alt="MongoDB" /></div>
+            <div class="skill"><img src="skills/sql.svg" alt="SQL" /></div>
+            <div class="skill"><img src="skills/solidity.svg" alt="Solidity" /></div>
+            <div class="skill"><img src="skills/git.svg" alt="Git" /></div>
+            <div class="skill"><img src="skills/docker.svg" alt="Docker" /></div>
+            <div class="skill"><img src="skills/next.svg" alt="Next.js" /></div>
+            <div class="skill"><img src="skills/ts.svg" alt="TypeScript" /></div>
+            <div class="skill"><img src="skills/express.svg" alt="Express" /></div>
+            <div class="skill"><img src="skills/tailwind.svg" alt="Tailwind" /></div>
+            <div class="skill"><img src="skills/python.svg" alt="Python" /></div>
+            <div class="skill"><img src="skills/firebase.svg" alt="Firebase" /></div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="title-underline"></div>
+      <div class="divider"></div>
+
+      <section class="section projects" id="projects">
+        <h4 class="section-title">Projects</h4>
+        <div class="projects-grid">
+          <a class="project-card" href="https://lms.maaledu.com" target="_blank" rel="noopener noreferrer">
+            <div class="project-media">
+              <img src="images/lms.svg" alt="Learning Management System" />
+              <div class="project-tags">
+                <span>Node.js</span>
+                <span>React</span>
+                <span>MongoDB</span>
+              </div>
             </div>
-            <div class="projects-grid">
-                <div class="project-card" data-category="web3">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/KartikDehru/web3-crowdfunding" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/KartikDehru/web3-crowdfunding" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-placeholder">
-                            <i class="fas fa-coins"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Web3 Crowdfunding Platform</h3>
-                        <p class="project-description">A decentralized crowdfunding platform built on Ethereum with smart contracts for secure fundraising.</p>
-                        <div class="project-tags">
-                            <span class="tag">Solidity</span>
-                            <span class="tag">Ethereum</span>
-                            <span class="tag">Web3.js</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web3">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/KartikDehru/weather-mood-nft" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/KartikDehru/weather-mood-nft" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-placeholder">
-                            <i class="fas fa-cloud-sun"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Weather Mood NFT</h3>
-                        <p class="project-description">Dynamic NFTs that change based on real-time weather data, showcasing the power of Chainlink oracles.</p>
-                        <div class="project-tags">
-                            <span class="tag">NFTs</span>
-                            <span class="tag">Chainlink</span>
-                            <span class="tag">Solidity</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web3">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/KartikDehru/chainlink-project" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/KartikDehru/chainlink-project" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-placeholder">
-                            <i class="fas fa-link"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Chainlink Integration</h3>
-                        <p class="project-description">Advanced blockchain project demonstrating Chainlink oracle integration for real-world data feeds.</p>
-                        <div class="project-tags">
-                            <span class="tag">Chainlink</span>
-                            <span class="tag">Oracles</span>
-                            <span class="tag">DeFi</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="project-body">
+              <h3>Learning Management System</h3>
+              <p>Production LMS with course enrollment, JWT auth, role-based access, and progress tracking — live at lms.maaledu.com.</p>
             </div>
+          </a>
+
+          <a class="project-card" href="https://p2p.aman.finance" target="_blank" rel="noopener noreferrer">
+            <div class="project-media">
+              <img src="images/p2p.svg" alt="P2P Finance Platform" />
+              <div class="project-tags">
+                <span>React</span>
+                <span>Solidity</span>
+                <span>ethers.js</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>P2P Finance Platform</h3>
+              <p>Peer-to-peer financial platform with secure payment flows, wallet integration, and smart contract-backed settlement.</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="https://web3-crowdfunding-alpha.vercel.app" target="_blank" rel="noopener noreferrer">
+            <div class="project-media">
+              <img src="images/crowdfunding.svg" alt="Web3 Crowdfunding DApp" />
+              <div class="project-tags">
+                <span>React</span>
+                <span>Solidity</span>
+                <span>Hardhat</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Web3 Crowdfunding DApp</h3>
+              <p>Decentralized crowdfunding on Ethereum — create campaigns, contribute ETH, and release funds via smart contracts.</p>
+            </div>
+          </a>
         </div>
-    </section>
+        <a class="view-more" href="/projects.html">
+          <img src="icons/eye.svg" alt="" />
+          View More
+        </a>
+      </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="skills-content">
-                <div class="skills-category">
-                    <h3 class="category-title">Blockchain & Web3</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-cube"></i>
-                            </div>
-                            <span class="skill-name">Solidity</span>
-                            <div class="skill-level">
-                                <div class="skill-bar" data-level="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-ethereum"></i>
-                            </div>
-                            <span class="skill-name">Ethereum</span>
-                            <div class="skill-level">
-                                <div class="skill-bar" data-level="88"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-link"></i>
-                            </div>
-                            <span class="skill-name">Chainlink</span>
-                            <div class="skill-level">
-                                <div class="skill-bar" data-level="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-coins"></i>
-                            </div>
-                            <span class="skill-name">DeFi Protocols</span>
-                            <div class="skill-level">
-                                <div class="skill-bar" data-level="80"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="divider"></div>
 
-                <div class="skills-category">
-                    <h3 class="category-title">Development Tools</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-js-square"></i>
-                            </div>
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-level">
-                                <div class="skill-bar" data-level="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-react"></i>
-                            </div>
-                            <span class="skill-name">React</span>
-                            <div class="skill-level">
-                                <div class="skill-bar" data-level="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <span class="skill-name">Git & GitHub</span>
-                            <div class="skill-level">
-                                <div class="skill-bar" data-level="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-terminal"></i>
-                            </div>
-                            <span class="skill-name">Hardhat/Truffle</span>
-                            <div class="skill-level">
-                                <div class="skill-bar" data-level="85"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section class="section experience" id="experience">
+        <h4 class="section-title lg">Work Experience</h4>
+        <div class="exp-list">
+          <article class="exp-card">
+            <div class="exp-top">
+              <div class="exp-heading">
+                <h2><span class="exp-company">AI Green Bubble SDN BHD</span> <span class="exp-badge">Remote</span></h2>
+                <div class="exp-dates"><div>Dec 2025 - Present</div></div>
+              </div>
+              <div class="exp-role">Full Stack Web3 Developer <span class="exp-badge mobile">Remote</span></div>
             </div>
+            <p class="exp-desc">Designing and developing full-stack Web3 applications integrating blockchain smart contracts with modern front-end interfaces. Built and deployed a live LMS and P2P financial platform; managed DigitalOcean and Docker deployments.</p>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-top">
+              <div class="exp-heading">
+                <h2><span class="exp-company">CyberAIX Solutions Pvt. Ltd</span></h2>
+                <div class="exp-dates"><div>Jun 2025 - Nov 2025</div></div>
+              </div>
+              <div class="exp-role">Full Stack Intern</div>
+            </div>
+            <p class="exp-desc">Implemented backend logic and REST APIs with Node.js and Express.js. Worked with MongoDB and MySQL, built responsive UIs, and contributed to agile sprint cycles across development and staging environments.</p>
+          </article>
         </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>kartikdehru2003@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>+91 8571022667</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <p>Greater Noida, India</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="contact-form">
-                    <form class="form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" class="form-textarea" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
+      <section class="section achievements" id="achievements">
+        <div class="achievements-heading">
+          <img src="media/trophy.svg" alt="trophy" />
+          <h4>Achievements</h4>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-text">Kartik Dehru</span>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/KartikDehru" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://x.com/jhon91670153464" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="https://discord.com/users/jhon321_" class="social-link"><i class="fab fa-discord"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Kartik Dehru. All rights reserved.</p>
-            </div>
+        <div class="achievements-list">
+          <!-- Achievements left empty for now -->
+          <p class="achievement-empty">Coming soon</p>
         </div>
-    </footer>
+      </section>
 
-    <script src="script.js"></script>
+      <div class="divider" id="contact-divider"></div>
+
+      <section class="section contact" id="contact">
+        <div class="contact-box">
+          <p class="contact-kicker">Wanna cook up something together?</p>
+          <h4 class="contact-title">Get In Touch</h4>
+          <a class="mail-btn" href="mailto:kartikdehru2003@gmail.com">
+            <img src="icons/mail.svg" alt="mail" />
+            <span>Say Hello</span>
+          </a>
+        </div>
+      </section>
+
+      <div class="divider thin footer-line"></div>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <p class="footer-copy">© <span id="year"></span> Kartik Dehru</p>
+          <div class="socials">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/KartikDehru" aria-label="GitHub">
+              <img src="icons/github.svg" alt="GitHub" />
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kartik-dehru-296798245" aria-label="LinkedIn">
+              <img src="icons/linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://x.com/jhon91670153464" aria-label="Twitter">
+              <img src="icons/x.svg" alt="Twitter" />
+            </a>
+            <a href="mailto:kartikdehru2003@gmail.com" aria-label="Email">
+              <img src="icons/mail.svg" alt="Email" />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

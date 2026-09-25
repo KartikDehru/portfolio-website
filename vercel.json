@@ -2,36 +2,13 @@
   "version": 2,
   "builds": [
     {
-      "src": "*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.js",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.jpg",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.jpeg",
+      "src": "**/*",
       "use": "@vercel/static"
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
+    { "src": "/projects", "dest": "/projects.html" },
+    { "src": "/(.*)", "dest": "/$1" }
   ],
-  "outputDirectory": ".",
-  "buildCommand": "echo 'Static website - no build needed'"
+  "cleanUrls": true
 }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Kartik Dehru</title>
+  <meta name="description" content="Projects by Kartik Dehru — full stack Web3 apps, LMS platforms, and decentralized finance." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true">
+    <svg class="grid-svg">
+      <defs>
+        <pattern id="grid" width="45" height="45" patternUnits="userSpaceOnUse" x="-1" y="-1">
+          <path d="M.5 45V.5H45" fill="none" stroke-dasharray="0"></path>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#grid)"></rect>
+      <svg x="-1" y="-1" class="grid-squares overflow-visible"></svg>
+    </svg>
+  </div>
+
+  <div class="page">
+    <nav class="navbar scrolled" id="navbar">
+      <a class="nav-brand" href="/">Kartik Dehru</a>
+      <div class="nav-links">
+        <a href="/projects">Projects</a>
+        <a href="/#contact">Contact</a>
+      </div>
+    </nav>
+
+    <main class="projects-page">
+      <section class="section projects">
+        <h4 class="section-title">Projects</h4>
+        <div class="projects-grid">
+          <a class="project-card" href="https://lms.maaledu.com" target="_blank" rel="noopener noreferrer">
+            <div class="project-media">
+              <img src="images/lms.svg" alt="Learning Management System" />
+              <div class="project-tags">
+                <span>Node.js</span>
+                <span>React</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Learning Management System</h3>
+              <p>Production LMS with course enrollment, JWT auth, role-based access, and progress tracking — live at lms.maaledu.com.</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="https://p2p.aman.finance" target="_blank" rel="noopener noreferrer">
+            <div class="project-media">
+              <img src="images/p2p.svg" alt="P2P Finance Platform" />
+              <div class="project-tags">
+                <span>React</span>
+                <span>Solidity</span>
+                <span>ethers.js</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>P2P Finance Platform</h3>
+              <p>Peer-to-peer financial platform with secure payment flows, wallet integration, and smart contract-backed settlement.</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="https://web3-crowdfunding-alpha.vercel.app" target="_blank" rel="noopener noreferrer">
+            <div class="project-media">
+              <img src="images/crowdfunding.svg" alt="Web3 Crowdfunding DApp" />
+              <div class="project-tags">
+                <span>React</span>
+                <span>Solidity</span>
+                <span>Hardhat</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Web3 Crowdfunding DApp</h3>
+              <p>Decentralized crowdfunding on Ethereum — create campaigns, contribute ETH, and release funds via smart contracts.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <div class="divider thin footer-line"></div>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <p class="footer-copy">© <span id="year"></span> Kartik Dehru</p>
+          <div class="socials">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/KartikDehru" aria-label="GitHub">
+              <img src="icons/github.svg" alt="GitHub" />
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kartik-dehru-296798245" aria-label="LinkedIn">
+              <img src="icons/linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://x.com/jhon91670153464" aria-label="Twitter">
+              <img src="icons/x.svg" alt="Twitter" />
+            </a>
+            <a href="mailto:kartikdehru2003@gmail.com" aria-label="Email">
+              <img src="icons/mail.svg" alt="Email" />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

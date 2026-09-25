@@ -1,23 +1,19 @@
 {
   "name": "portfolio-website",
-  "version": "1.0.0",
-  "description": "A modern, design-heavy portfolio website built with HTML, CSS, and JavaScript",
+  "version": "2.0.0",
+  "description": "Kartik Dehru portfolio — dark grid aesthetic inspired by 0xbose.vercel.app",
   "main": "index.html",
   "scripts": {
-    "start": "python -m http.server 8000",
-    "dev": "python -m http.server 8000",
-    "build": "echo 'Portfolio website is ready!'",
-    "deploy": "echo 'Ready for deployment to your hosting service'"
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Static portfolio — no build step'",
+    "deploy": "echo 'Deploy via Vercel'"
   },
   "keywords": [
     "portfolio",
-    "website",
-    "design",
-    "responsive",
-    "modern",
-    "html",
-    "css",
-    "javascript"
+    "web3",
+    "fullstack",
+    "kartik-dehru"
   ],
   "author": "Kartik Dehru",
   "license": "MIT",
@@ -25,10 +21,5 @@
     "type": "git",
     "url": "https://github.com/KartikDehru/portfolio-website.git"
   },
-  "bugs": {
-    "url": "https://github.com/KartikDehru/portfolio-website/issues"
-  },
-  "homepage": "https://kartikdehru.github.io/portfolio-website",
-  "devDependencies": {},
-  "dependencies": {}
+  "homepage": "https://kartikdehru.github.io/portfolio-website"
 }
