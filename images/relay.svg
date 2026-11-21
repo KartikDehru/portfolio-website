@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960" height="400" viewBox="0 0 960 400">
+  <defs>
+    <pattern id="g" width="45" height="45" patternUnits="userSpaceOnUse"><path d="M.5 45V.5H45" fill="none" stroke="#222"/></pattern>
+    <radialGradient id="glow" cx="40%" cy="35%" r="55%"><stop offset="0%" stop-color="#3a3a3a" stop-opacity=".4"/><stop offset="100%" stop-color="#101010" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="960" height="400" fill="#101010"/>
+  <rect width="960" height="400" fill="url(#g)"/>
+  <rect width="960" height="400" fill="url(#glow)"/>
+  <g transform="translate(48,48)"><circle cx="120" cy="120" r="55" fill="none" stroke="#3a3a3a"/><circle cx="120" cy="120" r="30" fill="none" stroke="#5a5a5a"/><circle cx="120" cy="120" r="5" fill="#eee"/><circle cx="175" cy="120" r="3" fill="#bbb"/><circle cx="65" cy="120" r="3" fill="#bbb"/><circle cx="120" cy="65" r="3" fill="#bbb"/><circle cx="120" cy="175" r="3" fill="#bbb"/></g>
+  
+  <rect x="780" y="48" width="116" height="116" fill="#161616" stroke="#333"/>
+  <image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij4KICA8dGl0bGU+UmVsYXkgTWVzaDwvdGl0bGU+CiAgPGcgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CiAgICA8cG9seWdvbiBwb2ludHM9IjMyLDQgMTAsMzIgMzIsMzIiIGZpbGw9IiM4RTdDRkYiLz4KICAgIDxwb2x5Z29uIHBvaW50cz0iMzIsNCA1NCwzMiAzMiwzMiIgZmlsbD0iIzJFOEJGRiIvPgogICAgPHBvbHlnb24gcG9pbnRzPSIxMCwzMiAzMiw2MCAzMiwzMiIgZmlsbD0iIzM0Qzc4RiIvPgogICAgPHBvbHlnb24gcG9pbnRzPSI1NCwzMiAzMiw2MCAzMiwzMiIgZmlsbD0iI0ZGNkI4QSIvPgogIDwvZz4KICA8Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSI1IiBmaWxsPSIjMUQxRDFGIi8+Cjwvc3ZnPgo=" x="794" y="62" width="88" height="88" preserveAspectRatio="xMidYMid meet"/>
+  <text x="48" y="300" fill="#ebebeb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="34" font-weight="600">Relay Mesh</text>
+  <text x="48" y="340" fill="#bebebe" font-family="ui-monospace, SFMono-Regular, monospace" font-size="15">Private onion-routed JSON-RPC</text>
+</svg>
