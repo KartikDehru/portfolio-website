@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Kartik Dehru</title>
-  <meta name="description" content="Projects by Kartik Dehru — full stack Web3 apps, LMS platforms, and decentralized finance." />
+  <meta name="description" content="Projects by Kartik Dehru — Web3, full stack apps, privacy relays, and production platforms." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -22,10 +22,10 @@
 
   <div class="page">
     <nav class="navbar scrolled" id="navbar">
-      <a class="nav-brand" href="/">Kartik Dehru</a>
+      <a class="nav-brand" href="index.html">Kartik Dehru</a>
       <div class="nav-links">
-        <a href="/projects">Projects</a>
-        <a href="/#contact">Contact</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#contact">Contact</a>
       </div>
     </nav>
 
@@ -33,24 +33,24 @@
       <section class="section projects">
         <h4 class="section-title">Projects</h4>
         <div class="projects-grid">
-          <a class="project-card" href="https://lms.maaledu.com" target="_blank" rel="noopener noreferrer">
+          <a class="project-card" href="https://relay-mesh-zeta.vercel.app" target="_blank" rel="noopener noreferrer">
             <div class="project-media">
-              <img src="images/lms.svg" alt="Learning Management System" />
+              <img src="images/relay.svg" alt="Relay Mesh" />
               <div class="project-tags">
-                <span>Node.js</span>
-                <span>React</span>
-                <span>MongoDB</span>
+                <span>TypeScript</span>
+                <span>x25519</span>
+                <span>RPC</span>
               </div>
             </div>
             <div class="project-body">
-              <h3>Learning Management System</h3>
-              <p>Production LMS with course enrollment, JWT auth, role-based access, and progress tracking — live at lms.maaledu.com.</p>
+              <h3>Relay Mesh</h3>
+              <p>3-hop onion-routed relay network for private JSON-RPC — no single hop sees both client identity and plaintext.</p>
             </div>
           </a>
 
-          <a class="project-card" href="https://p2p.aman.finance" target="_blank" rel="noopener noreferrer">
+          <a class="project-card" href="https://p2p.truefin.finance/" target="_blank" rel="noopener noreferrer">
             <div class="project-media">
-              <img src="images/p2p.svg" alt="P2P Finance Platform" />
+              <img src="images/p2p.svg" alt="TrueFin P2P" />
               <div class="project-tags">
                 <span>React</span>
                 <span>Solidity</span>
@@ -58,23 +58,98 @@
               </div>
             </div>
             <div class="project-body">
-              <h3>P2P Finance Platform</h3>
-              <p>Peer-to-peer financial platform with secure payment flows, wallet integration, and smart contract-backed settlement.</p>
+              <h3>TrueFin P2P</h3>
+              <p>Peer-to-peer finance platform with secure payment flows, wallet integration, and smart contract-backed settlement.</p>
             </div>
           </a>
 
-          <a class="project-card" href="https://web3-crowdfunding-alpha.vercel.app" target="_blank" rel="noopener noreferrer">
+          <a class="project-card" href="https://lms.maaledu.com" target="_blank" rel="noopener noreferrer">
             <div class="project-media">
-              <img src="images/crowdfunding.svg" alt="Web3 Crowdfunding DApp" />
+              <img src="images/lms.svg" alt="Maal Edu LMS" />
               <div class="project-tags">
+                <span>Node.js</span>
                 <span>React</span>
-                <span>Solidity</span>
-                <span>Hardhat</span>
+                <span>MongoDB</span>
               </div>
             </div>
             <div class="project-body">
-              <h3>Web3 Crowdfunding DApp</h3>
-              <p>Decentralized crowdfunding on Ethereum — create campaigns, contribute ETH, and release funds via smart contracts.</p>
+              <h3>Maal Edu LMS</h3>
+              <p>Production LMS with course enrollment, JWT auth, role-based access, and progress tracking for live learners.</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="https://github.com/KartikDehru/Hash-Account" target="_blank" rel="noopener noreferrer">
+            <div class="project-media">
+              <img src="images/hash-account.svg" alt="Hash Account" />
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Solidity</span>
+                <span>PQ Crypto</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Hash Account</h3>
+              <p>Post-quantum Ethereum account using hash-based one-time signatures — no ECDSA keys required.</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="https://github.com/KartikDehru/ClinicBook" target="_blank" rel="noopener noreferrer">
+            <div class="project-media">
+              <img src="images/clinicbook.svg" alt="ClinicBook" />
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Stripe</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>ClinicBook</h3>
+              <p>Multi-tenant scheduling for clinics, dental practices, physios, gyms and tutors with Stripe subscriptions.</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="https://github.com/KartikDehru/Forge" target="_blank" rel="noopener noreferrer">
+            <div class="project-media">
+              <img src="images/forge.svg" alt="Forge" />
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>Yjs</span>
+                <span>TypeScript</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Forge</h3>
+              <p>Realtime docs and issue tracking for product teams — specs live next to the issues that implement them.</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="https://github.com/KartikDehru/Witness" target="_blank" rel="noopener noreferrer">
+            <div class="project-media">
+              <img src="images/witness.svg" alt="Witness" />
+              <div class="project-tags">
+                <span>TypeScript</span>
+                <span>zkML</span>
+                <span>Attestation</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Witness</h3>
+              <p>Control plane for verifiable AI outputs — attestations, trust policy, replay protection, and audit log.</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="https://github.com/KartikDehru/source-mark" target="_blank" rel="noopener noreferrer">
+            <div class="project-media">
+              <img src="images/sourcemark.svg" alt="SourceMark" />
+              <div class="project-tags">
+                <span>TypeScript</span>
+                <span>Hedera</span>
+                <span>Subgraphs</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>SourceMark</h3>
+              <p>Metered onchain read layer that declines to answer when independently pinned deployments disagree.</p>
             </div>
           </a>
         </div>
@@ -92,8 +167,8 @@
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kartik-dehru-296798245" aria-label="LinkedIn">
               <img src="icons/linkedin.svg" alt="LinkedIn" />
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://x.com/jhon91670153464" aria-label="Twitter">
-              <img src="icons/x.svg" alt="Twitter" />
+            <a target="_blank" rel="noopener noreferrer" href="https://x.com/kartik_dehru" aria-label="X">
+              <img src="icons/x.svg" alt="X" />
             </a>
             <a href="mailto:kartikdehru2003@gmail.com" aria-label="Email">
               <img src="icons/mail.svg" alt="Email" />

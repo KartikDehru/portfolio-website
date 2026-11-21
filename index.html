@@ -26,9 +26,9 @@
 
   <div class="page">
     <nav class="navbar" id="navbar">
-      <a class="nav-brand" href="/">Kartik Dehru</a>
+      <a class="nav-brand" href="index.html">Kartik Dehru</a>
       <div class="nav-links">
-        <a href="/projects">Projects</a>
+        <a href="projects.html">Projects</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -62,20 +62,20 @@
         <div class="skills-inner">
           <div class="skills-grid">
             <div class="skill"><img src="skills/js.svg" alt="JavaScript" /></div>
+            <div class="skill"><img src="skills/ts.svg" alt="TypeScript" /></div>
             <div class="skill"><img src="skills/react.svg" alt="React" /></div>
-            <div class="skill"><img src="skills/html.svg" alt="HTML" /></div>
-            <div class="skill"><img src="skills/css.svg" alt="CSS" /></div>
+            <div class="skill"><img src="skills/next.svg" alt="Next.js" /></div>
             <div class="skill"><img src="skills/node.svg" alt="Node.js" /></div>
+            <div class="skill"><img src="skills/solidity.svg" alt="Solidity" /></div>
+            <div class="skill"><img src="skills/python.svg" alt="Python" /></div>
             <div class="skill"><img src="skills/mongodb.svg" alt="MongoDB" /></div>
             <div class="skill"><img src="skills/sql.svg" alt="SQL" /></div>
-            <div class="skill"><img src="skills/solidity.svg" alt="Solidity" /></div>
             <div class="skill"><img src="skills/git.svg" alt="Git" /></div>
             <div class="skill"><img src="skills/docker.svg" alt="Docker" /></div>
-            <div class="skill"><img src="skills/next.svg" alt="Next.js" /></div>
-            <div class="skill"><img src="skills/ts.svg" alt="TypeScript" /></div>
-            <div class="skill"><img src="skills/express.svg" alt="Express" /></div>
+            <div class="skill"><img src="skills/html.svg" alt="HTML" /></div>
+            <div class="skill"><img src="skills/css.svg" alt="CSS" /></div>
             <div class="skill"><img src="skills/tailwind.svg" alt="Tailwind" /></div>
-            <div class="skill"><img src="skills/python.svg" alt="Python" /></div>
+            <div class="skill"><img src="skills/express.svg" alt="Express" /></div>
             <div class="skill"><img src="skills/firebase.svg" alt="Firebase" /></div>
           </div>
         </div>
@@ -86,6 +86,36 @@
       <section class="section projects" id="projects">
         <h4 class="section-title">Projects</h4>
         <div class="projects-grid">
+          <a class="project-card" href="https://relay-mesh-zeta.vercel.app" target="_blank" rel="noopener noreferrer">
+            <div class="project-media">
+              <img src="images/relay.svg" alt="Relay Mesh" />
+              <div class="project-tags">
+                <span>TypeScript</span>
+                <span>x25519</span>
+                <span>RPC</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Relay Mesh</h3>
+              <p>3-hop onion-routed relay network for private JSON-RPC — no single hop sees both client identity and plaintext.</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="https://p2p.truefin.finance/" target="_blank" rel="noopener noreferrer">
+            <div class="project-media">
+              <img src="images/p2p.svg" alt="TrueFin P2P" />
+              <div class="project-tags">
+                <span>React</span>
+                <span>Solidity</span>
+                <span>ethers.js</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>TrueFin P2P</h3>
+              <p>Peer-to-peer finance platform with secure payment flows, wallet integration, and smart contract-backed settlement.</p>
+            </div>
+          </a>
+
           <a class="project-card" href="https://lms.maaledu.com" target="_blank" rel="noopener noreferrer">
             <div class="project-media">
               <img src="images/lms.svg" alt="Learning Management System" />
@@ -96,42 +126,12 @@
               </div>
             </div>
             <div class="project-body">
-              <h3>Learning Management System</h3>
-              <p>Production LMS with course enrollment, JWT auth, role-based access, and progress tracking — live at lms.maaledu.com.</p>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://p2p.aman.finance" target="_blank" rel="noopener noreferrer">
-            <div class="project-media">
-              <img src="images/p2p.svg" alt="P2P Finance Platform" />
-              <div class="project-tags">
-                <span>React</span>
-                <span>Solidity</span>
-                <span>ethers.js</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>P2P Finance Platform</h3>
-              <p>Peer-to-peer financial platform with secure payment flows, wallet integration, and smart contract-backed settlement.</p>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://web3-crowdfunding-alpha.vercel.app" target="_blank" rel="noopener noreferrer">
-            <div class="project-media">
-              <img src="images/crowdfunding.svg" alt="Web3 Crowdfunding DApp" />
-              <div class="project-tags">
-                <span>React</span>
-                <span>Solidity</span>
-                <span>Hardhat</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Web3 Crowdfunding DApp</h3>
-              <p>Decentralized crowdfunding on Ethereum — create campaigns, contribute ETH, and release funds via smart contracts.</p>
+              <h3>Maal Edu LMS</h3>
+              <p>Production LMS with course enrollment, JWT auth, role-based access, and progress tracking for live learners.</p>
             </div>
           </a>
         </div>
-        <a class="view-more" href="/projects.html">
+        <a class="view-more" href="projects.html">
           <img src="icons/eye.svg" alt="" />
           View More
         </a>
@@ -150,7 +150,7 @@
               </div>
               <div class="exp-role">Full Stack Web3 Developer <span class="exp-badge mobile">Remote</span></div>
             </div>
-            <p class="exp-desc">Designing and developing full-stack Web3 applications integrating blockchain smart contracts with modern front-end interfaces. Built and deployed a live LMS and P2P financial platform; managed DigitalOcean and Docker deployments.</p>
+            <p class="exp-desc">Designing and developing full-stack Web3 applications integrating blockchain smart contracts with modern front-end interfaces. Built and deployed a live LMS (lms.maaledu.com) and TrueFin P2P (p2p.truefin.finance); managed DigitalOcean and Docker deployments.</p>
           </article>
 
           <article class="exp-card">
@@ -163,17 +163,6 @@
             </div>
             <p class="exp-desc">Implemented backend logic and REST APIs with Node.js and Express.js. Worked with MongoDB and MySQL, built responsive UIs, and contributed to agile sprint cycles across development and staging environments.</p>
           </article>
-        </div>
-      </section>
-
-      <section class="section achievements" id="achievements">
-        <div class="achievements-heading">
-          <img src="media/trophy.svg" alt="trophy" />
-          <h4>Achievements</h4>
-        </div>
-        <div class="achievements-list">
-          <!-- Achievements left empty for now -->
-          <p class="achievement-empty">Coming soon</p>
         </div>
       </section>
 
@@ -202,8 +191,8 @@
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kartik-dehru-296798245" aria-label="LinkedIn">
               <img src="icons/linkedin.svg" alt="LinkedIn" />
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://x.com/jhon91670153464" aria-label="Twitter">
-              <img src="icons/x.svg" alt="Twitter" />
+            <a target="_blank" rel="noopener noreferrer" href="https://x.com/kartik_dehru" aria-label="X">
+              <img src="icons/x.svg" alt="X" />
             </a>
             <a href="mailto:kartikdehru2003@gmail.com" aria-label="Email">
               <img src="icons/mail.svg" alt="Email" />
